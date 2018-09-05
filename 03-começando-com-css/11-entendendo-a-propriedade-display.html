@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Entendendo a propriedade display</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <h1>Entendendo a propriedade display</h1>
+    <p>
+      A propriedade CSS  display especifica o tipo de caixa de renderização usada por um elemento. No HTML, os valores padrões da propriedade  display são feitas a partir do comportamento descrito nas especificações HTML ou da folha de estilo padrão do navegador/usuário.
+    </p>
+    <h2>Block</h2>
+    <p>
+      O elemento se comporta como um bloco. Ocupando praticamente toda a largura disponível na página. Elementos de parágrafo (p) e título(h1, h2, ...) possuem esse comportamento por padrão.
+    </p>
+
+    <h2>Inline</h2>
+    <p>
+      O elemento se comporta como um elemento em linha. Exemplos de elemento que se comportam assim são por exemplo as tags span e a.
+    </p>
+
+    <h2>None</h2>
+    <p>
+      Ao contrários dos valores atuais, o valor none permite, informalmente dizendo, que você desative a propriedade do elemento. Quando você utiliza essa propriedade, o elemento e todos seus elementos filhos não são renderizados na página.
+    </p>
+
+    <p>
+      Uma coisa importante a ressaltar que a propriedade <code>display: none </code>não é a mesma coisa da propriedade <code>visibility: hidden.</code> Nessa última o elemento não aparece na tela mas é renderizado na página, ou seja, vemos um espaço vazio no lugar do elemento; já a propriedade <code>display: none</code> não renderiza o elemento e, o espaço que era ocupado por ele, é ocupado pelo elemento seguinte no fluxo do documento.
+    </p>
+
+    <h2>Table</h2>
+    <p>
+      O elemento se comporta como uma tabela.
+    </p>
+
+    <h2>Inline-block</h2>
+    <p>
+      Semelhante ao <code>inline</code>, no entanto, ao definirmos <code>inline-block</code> em um elemento, conseguimos definir as propriedades de largura e altura para ele. Coisa que não conseguimos em um elemento com <code>display: inline.</code>
+    </p>
+    <p>Referências: <a href="http://tableless.github.io/iniciantes/manual/css/display.html">tableless</a></p>
+    <a href="#" class="nome-empresa">Nome da empresa</a>
+    <a href="#" class="segmento-da-empresa">Seguimento da empresa</a>
+
+    <p class="curso-html">HTML</p>
+    <p class="curso-css">CSS</p>
+    <p class="curso-javascript">JAVASCRIPT</p>
+  </body>
+</html>

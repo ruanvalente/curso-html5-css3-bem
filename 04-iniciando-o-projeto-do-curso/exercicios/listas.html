@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Listas ordenadas e não ordernadas</title>
+
+		<!-- List style -->
+		<style>
+			ul.menu {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			ul.menu > li {
+				display: inline-block;
+				border: 2px solid #ccc;
+				margin-left: 5px;
+				padding: 5px;	
+			}
+
+			ul.menu > li:hover {
+				color: #fff;
+				background-color: red;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+			<h1>Listas ordernadas e não ordernadas</h1>
+			<p>
+				Usamos a tag <strong>ul</strong> seguida de um <strong>li</strong>, que significa um item da lista para dizer que queremos uma lista não ordenada.
+			</p>
+
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+			</ul>
+
+			<p>
+				Usamos a tag <strong>ol</strong> seguida de um <strong>li</strong>, que significa um item da lista para dizer que queremos uma lista ordernada.
+			</p>
+
+			<ol>
+				<li>Front-End</li>
+				<li>Back-End</li>
+				<li>FullStack</li>
+			</ol>
+
+			<p>
+				Também podemos colocar uma lista ordenada ou não ordenada uma dentro da outra.
+			</p>
+
+			<ul>
+				<li>
+					Front-End
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					Back-End
+					<ul>
+						<li>Nodejs</li>
+						<li>React</li>
+						<li>MongoDB</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>
+				O uso da lista em nossos sites é quase que inevitável um uso clássico de uso das lista em nosso site, é quando precisamos criar um menu, para que o nosso usuário possa navega-lo.
+			</p>
+
+			<ul class="menu">
+				<li>Home</li>
+				<li>Sobre</li>
+				<li>Contato</li>
+			</ul>
+	</body>
+</html>

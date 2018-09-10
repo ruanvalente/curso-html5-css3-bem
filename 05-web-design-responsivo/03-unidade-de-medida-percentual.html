@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<style>
+		/*
+		Posso calcular o tamanho relativo da font usando a seguinte formula:
+		Por exemplo queremos colocar 30px mas usando percentual.
+		30 / 16 * 100 = 187.5
+		que seria ao equivalente 30px;
+		*/
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			font-size: 62.5%; /*10 /16 * 100 = 62.5*/
+		}
+/*
+		.container {
+			width: 1000px;
+			background-color: #fff612;
+		}
+*/
+		.caixa {
+			width: 50%;
+			margin-top: 10%;
+			border: 2px solid #000;
+			background-color: #ccc;
+			font-size: 200%; /*20px*/
+			padding: 10%;
+		}
+
+		h1 {
+			font-size: 250%; /*50px*/
+		}
+
+		p {
+			font-size: 150%; /*30px*/
+		}
+		</style>
+		<title>Unidade de medida em percentual</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="caixa">
+				<h1>Unidade de media em percentual</h1>
+				<p>
+					A unidade de media percentual, sempre é relativa ao elemento <strong>pai</strong>. E quando usamos para tamanho e largura o mesmo é relativo ao tamanho e largura do container que está inserido.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

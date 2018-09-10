@@ -1,0 +1,105 @@
+/* Main */
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+header {
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+
+header img {
+	margin-top: 12px;
+}
+
+/* Classes auxiliares */
+
+/* .container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} */
+
+/* Plano */
+
+#planos {
+	padding: 80px 0;
+}
+
+#planos::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+article {
+	border: 1px solid #95a4a5;
+  /*width: 30%;
+	float: left;
+	margin-right: 5%;*/
+}
+
+article > h2 {
+	text-align: center;
+	background-color: #95a4a5;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: normal;
+	font-size: 28px;
+}
+
+article > div {
+	text-align: center;
+	font-size: 28px;
+	margin: 20px 0;
+}
+
+article > ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+}
+
+article > ul > li {
+	text-align: center;
+}
+
+article > footer {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.botao {
+	display: inline-block;
+	background-color: #127d00;
+	color: #fff;
+	text-decoration: none;
+	padding: 12px 16px;
+}
+
+.botao:hover, .botao:focus {
+	background-color: #036400;
+}
+
+/* Media query */
+/*@media (min-width: 600px){
+	article {
+		background-color: #F8FF41;
+	}
+}*/
+
+/* @media (min-width: 800px){
+	article {
+		width: 30%;
+		float: left;
+		margin-right: 5%;
+	}
+} */

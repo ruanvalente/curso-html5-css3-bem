@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+
+		<style>
+			
+			article {
+				background-color: green;
+			}
+
+			article::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			body {
+				font-size: 22px;
+			}
+
+			h1::before {
+				content: "Título: "
+			}
+
+			h1::after {
+				content: " - Esse é meu título";
+			}
+
+			p::first-letter {
+				font-size: 40px;
+				color: red;
+			}
+
+			.coluna1, .coluna2 {
+				background-color: #ccc;
+			}
+
+			.coluna1 {
+				float: left;
+				width: 48%;
+			}
+
+			.coluna2 {
+				float: right;
+				width: 48%;
+			}
+
+			footer {
+				background-color: yellow;
+				text-align: center;
+			}
+
+		</style>
+
+		<title>Pseudo elementos</title>
+	</head>
+
+	<body>
+		<article>
+			<h1>Pseudo elemento</h1>
+
+			<p class="coluna1">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur est, architecto dignissimos harum temporibus cupiditate exercitationem, eius fugit sed quae ut repudiandae aliquid, enim ea dicta quo pariatur amet. Quae.
+			</p>
+
+				<p class="coluna2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. At accusantium et, voluptatibus hic natus molestias amet quas sapiente similique aperiam velit suscipit, dolores repellat possimus unde ratione fugiat debitis iure!
+			</p>
+
+			<p>
+				Podemo usar os <strong>pseudo-elemento</strong> quando precisamos definir uma propriedade de estilo antes ou depois dos elementos por exemplo, porém existem outras formas de usar os pseudo-elemento.
+			</p>
+		</article>
+
+		<footer>
+			Todos os direitos reservados para alguém !
+		</footer>
+	</body>
+</html>

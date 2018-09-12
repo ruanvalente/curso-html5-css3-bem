@@ -1,0 +1,44 @@
+/* 
+	Níveis de especificação: 
+	1 - ID
+*/
+
+#logo {
+	color: blue;
+}
+
+
+/* 2 - Classe */
+
+.amarelo {
+	color: yellow;
+}
+
+/* 3 - Tag */
+
+
+h1 {
+	color: green;
+}
+
+/*
+Neste caso o nível de especificação ficaria:
+ID - 
+Classes -
+Tag -
+
+Podemos também realizar um cálculo para saber a sua especificidade. Onde dependente do número de elementos, aquele que tiver o maior valor, será o mais especifico.
+EX:
+
+#id - 100 - Aqui acrecentamos 1 para cada elemento encontrado, no caso se tivesse mais de um ID seria acrecentando mais 1. Os demais já que não foi encontrado tanto classe como tag, então recebem o valor padrão de 0. 
+
+.classe - 010 - Neste caso não temos um ID, então o valor padrão é 0, já temos uma classe então recebe o valor 1, e não temos uma tag, então recebe o valor padrão de 0.
+
+tag - 001 - Aqui também não temos ID ou classe. Então ambos recebem o valor 0, assim restando o valor 1 para a tag encontrada.
+*/
+
+/*
+Podemos fazer um elemento não tão especifico ser mais especifico usando a propriedade !important. Porém, é considerado uma má prática, devido a propriedade alterar o nível de especificidade padrão dos navegadores.
+
+PS: Quando usamos o estilo inline dentro da tag, estamos especificando diretamente o estilo do elemento. Então, sendo assim, o estilo inline é a prioridade maxima sobreescrevendo qualquer nível de especificidade.;
+*/

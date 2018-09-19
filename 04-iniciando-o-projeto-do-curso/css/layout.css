@@ -1,5 +1,5 @@
 /*-----------------------*\
-	HEADER
+	HEADER - LAYOUT
 \*-----------------------*/
 .layout-cabecalho {
 	height: 60px;
@@ -14,3 +14,34 @@
 	padding: 80px 0;
 }
 
+/*-----------------------*\
+	CHAMADA - LAYOUT
+\*-----------------------*/
+
+.layout-chamada {
+	padding: 80px 0;
+
+	background-color: #7ab55c;
+}
+
+/*-----------------------*\
+	DEPOIMENTO - LAYOUT
+\*-----------------------*/
+
+.layout-depoimento {
+	padding: 80px 0;
+
+	background-color: #dadada;
+}
+
+/*-----------------------*\
+	RODAPÉ - LAYOUT
+\*-----------------------*/
+
+.layout-rodape {
+	padding: 40px 0;
+
+	background-color: #484848;
+	text-align: center;
+	color:#fff;
+}

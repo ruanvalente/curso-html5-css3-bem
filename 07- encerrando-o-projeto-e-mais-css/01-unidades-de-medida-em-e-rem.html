@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unidade de medida em rem</title>
+
+  <style>
+    /* 
+      A unidade de medida EM, realiza o seu cálculo realativo ao pai.
+      Ex:
+     */
+
+     /* .texto {
+       font-size: 20px;
+     }
+
+     .texto h1 {
+       font-size: 2em;
+     } */
+
+     /* Estou dizendo que o tamanho da fonte do meu elemento H1 agora é 2x realativo ao tamanho da fonte do seu pai, que é 20px. Então meu elemento terá 40px. */
+
+     /* 
+     Já a unidade de media REM , realiza seu cálculo baseando-se no valor padrão dos elementos posto no nosso documento.
+     Ex: 
+     */
+
+     .texto p span {
+       font-size: 2rem;
+     }
+
+     /* 
+        Estou dizendo que o tamanho da fonte do meu elemento SPAN agora é 2x realativo ao tamanho da fonte padrão do documento. Então meu elemento terá 32px, já que o valor padrão de fonte é 16px.
+      */
+  </style>
+</head>
+
+<body>
+  <div class="texto">
+    <h1>Unidade de medida em rem</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Modi aspernatur</span> itaque libero, iure placeat
+      blanditiis veniam mollitia facere fuga, consequuntur tenetur magnam odit ipsa consequatur a corporis doloremque
+      molestiae nesciunt.
+    </p>
+  </div>
+</body>
+
+</html>

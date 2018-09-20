@@ -15,9 +15,30 @@
 <body>
 	<!-- Header e logo -->
 
-	<header class="layout-cabecalho">
+	<header class="layout-cabecalho layout-cabecalho--home">
 		<div class="container">
-			<img src="imagens/logo.png" width="100" height="35" alt="MyPilas">
+			<nav class="navegacao">
+				<img src="imagens/logo.png" width="100" height="35" alt="MyPilas">
+
+				<div class="navegacao__menu">
+					<button class="botao-chaveador js-botao-chaveador"></button>
+
+					<ul class="menu js-menu">
+						<li class="menu__item">
+							<a href="#">Como funciona</a>
+						</li>
+						<li class="menu__item">
+							<a href="#planos">Planos e preços</a>
+						</li>
+						<li class="menu__item">
+							<a href="#">Contato</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="botao botao__login menu__item-botao">Login</a>
+						</li>	
+					</ul>
+				</div>
+			</nav>
 		</div>
 	</header>
 
@@ -84,7 +105,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<article class="plano">
+					<article class="plano plano--mais-popular">
 						<h2 class="plano__titulo">Micro</h2>
 						<div class="plano__preco">R$ 89/mês</div>
 						<ul class="plano__caracteristicas">
@@ -102,7 +123,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<article class="plano">
+					<article class="plano ultima-coluna">
 						<h2 class="plano__titulo">Pequena</h2>
 						<div class="plano__preco">R$ 99/mês</div>
 						<ul class="plano__caracteristicas">
@@ -127,6 +148,8 @@
 			<p>&copy; MyPilas. Todos os direitos reservados.</p>
 		</div>
 	</footer>
+
+	<script src="../04-iniciando-o-projeto-do-curso/js/main.js"></script>
 </body>
 
 </html>
